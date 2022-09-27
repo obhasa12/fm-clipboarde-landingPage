@@ -1,0 +1,37 @@
+@use 'mixins' as m;
+@use 'variables' as v;
+
+.main{
+    margin: 0 32px;
+    &__track{
+        &>h2{
+            margin-bottom: 20px;
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 33px;
+            color: v.$cl-neutral-drk-grayishBlue;
+        }
+        &>p{
+            margin-bottom: 64px;
+            line-height: 27px;
+            color: v.$cl-neutral-grayishBlue;
+        }
+    }
+    &__trackImg{
+        margin-bottom: 58px;
+    }
+    &__computerImg{
+        width: 311px;
+        height: 240px;
+    }
+    &__trackSearch{
+      
+    }
+    &__trackArticle{
+        @include m.breakpoints-up(large){
+            display: flex;
+            flex-direction: row;
+            flex: 1 1;
+        } 
+    }
+}
