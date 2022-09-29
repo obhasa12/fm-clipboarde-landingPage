@@ -4,10 +4,17 @@
 .header{
     margin: 124px 32px;
     @include m.breakpoints-up(large){
-        margin: 131px 375px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 131px 0;
     }
     &__logo{
         margin-bottom: 69px;
+        width: 125px;
+        @include m.breakpoints-up(large){
+            
+        }
     }
     &>h1{
         margin-bottom: 25px;
@@ -19,14 +26,21 @@
             font-size: 44px;
         }
     }
-    &>p{
+    &__text{
+        display: flex;
+        justify-content: center;
+    }
+    &>&__text>p{
         margin-bottom: 50px;
-        line-height: 27px;
+        line-height: 30px;
         color: v.$cl-neutral-grayishBlue;
         @include m.breakpoints-up(large){
-            font-size: 21px;
+            max-width: 730px;
+            font-size: 19px;
+
         }
     }
+   
     &__buttons{
         display: flex;
         flex-direction: column;

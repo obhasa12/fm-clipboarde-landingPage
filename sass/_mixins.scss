@@ -2,7 +2,7 @@
     //style
 }
 
-$breakpoints-up: ("medium": "40em", "large": "64em");
+$breakpoints-up: ("medium": "40em", "large": "64em", "xlarge" : "90em");
 $breakpoints-down: ("small": "39.9375em", "medium": "63.9375em");
 
 @mixin breakpoints-up($size){
