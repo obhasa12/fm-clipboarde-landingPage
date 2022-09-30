@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
@@ -9,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@200;400;600;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/43dae8087c.js" crossorigin="anonymous"></script>
   <title>Frontend Mentor | Clipboard landing page</title>
 
 </head>
@@ -69,52 +71,75 @@
 
       <section class="main__clipboard formatSubHeader">
         <h2>Access Clipboard anywhere</h2>
-        <p> Whether you’re on the go, or at your computer, you can access all your Clipboard snippets in a few simple clicks.</p>
+        <div class="main__text">
+          <p> Whether you’re on the go, or at your computer, you can access all your Clipboard snippets in a few simple clicks.</p>
+        </div>
         <img class="main__devicesImg" src="./images/image-devices.png" alt="">
       </section>
-      <section class="main__workflow"></section>
-      <section class="main__clipboardIOS"></section>
+
+      <section class="main__workflow formatSubHeader">
+        <h2>Supercharge your workflow</h2>
+        <div class="main__text">
+          <p>We’ve got the tools to boost your productivity.</p>
+        </div>
+        <div class="main__companyLogo">
+          <article class="company__blacklists formatTrackArticle articelContainer">
+            <img src="./images/icon-blacklist.svg" alt="blacklist-icon">
+            <h3>Create blacklists</h3>
+            <p>Ensure sensitive information never makes its way to your clipboard by excluding certain sources.</p>
+          </article>
+          <article class="company__snippets formatTrackArticle articelContainer">
+            <img src="./images/icon-text.svg" alt="text-icon">
+            <h3>Plain text snippets</h3>
+            <p>Remove unwanted formatting from copied text for a consistent look.</p>
+          </article>
+          <article class="company__preview formatTrackArticle articelContainer">
+            <img src="./images/icon-preview.svg" alt="preview-icon">
+            <h3>Sneak preview</h3>
+            <p>Quick preview of all snippets on your Clipboard for easy access.</p>
+          </article>
+        </div>
+        <div class="company__image">
+            <img class="company__google" src="./images/logo-google.png" alt="google-logo">
+            <img class="company__IBM" src="./images/logo-ibm.png" alt="ibm-logo">
+            <img class="company__microsoft" src="./images/logo-microsoft.png" alt="microsoft-logo">
+            <img class="company__hpe" src="./images/logo-hp.png" alt="hpe-logo">
+            <img class="company__vector" src="./images/logo-vector-graphics.png" alt="vector-logo"> 
+        </div>
+      </section>
+
+      <section class="main__clipboardIOS formatSubHeader">
+        <h2>Clipboard for iOS and Mac OS</h2>
+        <div class="main__text">
+          <p>Available for free on the App Store. Download for Mac or iOS, sync with iCloud and you’re ready to start adding to your clipboard. </p>
+        </div>
+        <div class="header__buttons">
+          <button class="header__iosButton btn">Download for iOS</button>
+          <button class="header__macButton btn" >Download for Mac</button>
+        </div> 
+      </section>
     </div>
   </main>
-
-  <!-- 
-  
-  
-
- 
-
-  Supercharge your workflow
-
-  We’ve got the tools to boost your productivity.
-
-  Create blacklists
-
-  Ensure sensitive information never makes its way to your clipboard by excluding certain sources.
-
-  Plain text snippets
-
-  Remove unwanted formatting from copied text for a consistent look.
-
-  Sneak preview
-
-  Quick preview of all snippets on your Clipboard for easy access.
-
-  Clipboard for iOS and Mac OS
-
-  Available for free on the App Store. Download for Mac or iOS, sync with iCloud 
-  and you’re ready to start adding to your clipboard.
-
-  Download for iOS
-  Download for Mac
-
-  FAQs
-  Contact Us
-  Privacy Policy
-  Press Kit
-  Install Guide -->
-  
   <footer>
-   
+    <div class="footer">
+      <div class="footer__image">
+        <img src="./images/logo.svg" alt="logo-image" class="footer__logo">
+      </div>
+      <nav>
+        <ul>
+          <li style="grid-area: articleone;">FAQs</li>
+          <li style="grid-area: articletwo">Contact Us</li>
+          <li style="grid-area: articlethree">Privacy Policy</li>
+          <li style="grid-area: articlefour">Press Kit</li>
+          <li style="grid-area: articlefive">Install Guide</li>
+        </ul>
+      </nav>
+      <div class="footer__socialLogo">
+        <i class="fa-brands fa-square-facebook fa-2xl"></i>
+        <i class="fa-brands fa-twitter fa-2xl"></i>
+        <i class="fa-brands fa-instagram fa-2xl"></i>
+      </div>
+    </div>
   </footer>
 </body>
 </html>

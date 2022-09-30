@@ -11,6 +11,12 @@ html {
   font-family: "Bai Jamjuree", sans-serif;
 }
 
+* ul, ol, li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 html, body, h1, h2, h3, p {
   margin: 0;
   padding: 0;
@@ -29,94 +35,105 @@ body {
 }
 
 .btn {
-  padding: 18px 76px;
+  padding: 1.125rem 4.75rem;
   color: white;
   font-size: 1rem;
   font-weight: 600;
-  letter-spacing: 1px;
+  letter-spacing: 0.0625rem;
   border: none;
-  border-radius: 30px;
+  border-radius: 1.875rem;
   cursor: pointer;
+  transition: opacity 150ms ease-in;
 }
 @media (min-width: 64em) {
   .btn {
-    padding: 18px 37px;
+    padding: 1.125rem 2.3125rem;
   }
+}
+.btn:hover {
+  opacity: 0.75;
 }
 
 .formatTrackArticle > h3 {
-  margin-bottom: 13px;
-  font-size: 25px;
+  margin-bottom: 0.8125rem;
+  font-size: 1.5rem;
   font-weight: 600;
   color: hsl(210deg, 10%, 33%);
 }
 @media (min-width: 64em) {
   .formatTrackArticle > h3 {
-    font-size: 25px;
+    font-size: 1.5625rem;
   }
 }
 .formatTrackArticle > p {
-  margin-bottom: 40px;
+  margin-bottom: 2.5rem;
   font-size: 1rem;
-  line-height: 27px;
+  line-height: 1.6875rem;
   color: hsl(201deg, 11%, 66%);
 }
 @media (min-width: 64em) {
   .formatTrackArticle > p {
-    font-size: 19px;
+    font-size: 1.1875rem;
   }
 }
 
 .formatSubHeader > h2 {
-  margin-bottom: 25px;
-  font-size: 24px;
-  font-weight: 600;
-  line-height: 33px;
+  margin-bottom: 1.5625rem;
+  font-size: 1.8125rem;
+  font-weight: 700;
+  line-height: 2.625rem;
   color: hsl(210deg, 10%, 33%);
 }
 @media (min-width: 64em) {
   .formatSubHeader > h2 {
-    font-size: 35px;
+    font-size: 2.1875rem;
   }
 }
 .formatSubHeader > p {
-  margin-bottom: 64px;
-  line-height: 30px;
+  margin-bottom: 3.125rem;
+  line-height: 1.875rem;
   color: hsl(201deg, 11%, 66%);
 }
 @media (min-width: 64em) {
   .formatSubHeader > p {
-    font-size: 19px;
-    margin: 0 371px;
-    margin-bottom: 84px;
+    font-size: 1.1875rem;
+    margin: 0 23.1875rem;
+    margin-bottom: 3.75rem;
+  }
+}
+
+@media (min-width: 64em) {
+  .articelContainer {
+    width: 22.1875rem;
+    height: 13.1875rem;
   }
 }
 
 .header {
-  margin: 124px 32px;
+  margin: 7.75rem 2rem;
 }
 @media (min-width: 64em) {
   .header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 131px 0;
+    margin: 8.1875rem 0;
   }
 }
 .header__logo {
-  margin-bottom: 69px;
-  width: 125px;
+  margin-bottom: 4.3125rem;
+  width: 7.8125rem;
 }
 .header > h1 {
-  margin-bottom: 25px;
-  font-size: 30px;
+  margin-bottom: 1.5625rem;
+  font-size: 1.875rem;
   font-weight: 600;
-  line-height: 41px;
+  line-height: 2.5625rem;
   color: hsl(210deg, 10%, 33%);
 }
 @media (min-width: 64em) {
   .header > h1 {
-    font-size: 44px;
+    font-size: 2.75rem;
   }
 }
 .header__text {
@@ -124,14 +141,14 @@ body {
   justify-content: center;
 }
 .header > .header__text > p {
-  margin-bottom: 50px;
-  line-height: 30px;
+  margin-bottom: 3.125rem;
+  line-height: 1.875rem;
   color: hsl(201deg, 11%, 66%);
 }
 @media (min-width: 64em) {
   .header > .header__text > p {
-    max-width: 730px;
-    font-size: 19px;
+    max-width: 45.625rem;
+    font-size: 1.1875rem;
   }
 }
 .header__buttons {
@@ -146,9 +163,9 @@ body {
   }
 }
 .header__iosButton {
-  margin-bottom: 26px;
+  margin-bottom: 1.625rem;
   background-color: hsl(171deg, 66%, 44%);
-  border: solid 3px hsl(171deg, 66%, 37%);
+  border: solid 0.1875rem hsl(171deg, 66%, 37%);
   border-top: none;
 }
 @media (min-width: 64em) {
@@ -158,12 +175,13 @@ body {
 }
 .header__macButton {
   background-color: hsl(233deg, 100%, 69%);
-  border: solid 3px hsl(233deg, 55%, 53%);
+  border: solid 0.1875rem hsl(233deg, 55%, 53%);
   border-top: none;
 }
 
 .main {
-  margin: 0 32px;
+  margin: 0 2rem;
+  margin-bottom: 10.75rem;
 }
 @media (min-width: 64em) {
   .main__trackHeader {
@@ -173,15 +191,15 @@ body {
   }
 }
 .main__trackHeader > h2 {
-  margin-bottom: 25px;
-  font-size: 24px;
-  font-weight: 600;
-  line-height: 33px;
+  margin-bottom: 1.5625rem;
+  font-size: 1.8125rem;
+  font-weight: 700;
+  line-height: 2.625rem;
   color: hsl(210deg, 10%, 33%);
 }
 @media (min-width: 64em) {
   .main__trackHeader > h2 {
-    font-size: 35px;
+    font-size: 2.1875rem;
   }
 }
 .main__text {
@@ -189,38 +207,38 @@ body {
   justify-content: center;
 }
 .main__text > p {
-  margin-bottom: 64px;
-  line-height: 30px;
+  margin-bottom: 4rem;
+  line-height: 1.875rem;
   color: hsl(201deg, 11%, 66%);
 }
 @media (min-width: 64em) {
   .main__text > p {
-    font-size: 19px;
-    width: 700px;
-    margin-bottom: 84px;
+    font-size: 1.1875rem;
+    width: 43.75rem;
+    margin-bottom: 3.125rem;
   }
 }
 .main__trackImg {
   flex: 3;
-  margin-bottom: 58px;
+  margin-bottom: 3.625rem;
 }
 .main__computerImg {
-  transform: translateX(-64px);
+  transform: translateX(-4rem);
   width: 105%;
-  min-width: 700px;
-  max-width: 900px;
+  min-width: 43.75rem;
+  max-width: 56.25rem;
 }
 @media (max-width: 63.9375em) {
   .main__computerImg {
     transform: translateX(0);
     width: 100%;
-    min-width: 311px;
+    min-width: 19.4375rem;
     height: 100%;
   }
 }
 @media (min-width: 64em) {
   .main__trackPoints {
-    padding-top: 69px;
+    padding-top: 4.3125rem;
     flex: 2.5 3;
     text-align: left;
   }
@@ -233,9 +251,97 @@ body {
   }
 }
 .main__devicesImg {
-  width: 311px;
+  width: 100%;
+  min-width: 19.4375rem;
+  max-width: 43.75rem;
 }
 .main__trackContainer {
-  margin-right: 260px;
-  min-width: 400px;
+  margin-bottom: 10.5rem;
+}
+@media (min-width: 64em) {
+  .main__trackContainer {
+    margin-right: 16.25rem;
+    min-width: 25rem;
+  }
+}
+.main__clipboard {
+  margin-bottom: 10.5rem;
+}
+@media (min-width: 64em) {
+  .main__clipboard {
+    margin-bottom: 5.625rem;
+  }
+}
+@media (min-width: 64em) {
+  .main__companyLogo {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex: 1 1 50%;
+    justify-content: center;
+    gap: 1.875rem;
+  }
+}
+
+.company__image {
+  display: flex;
+  margin-top: 5rem;
+  flex-direction: column;
+  align-items: center;
+}
+.company__image > img {
+  width: 8.8125rem;
+  margin-bottom: 4.25rem;
+}
+@media (min-width: 64em) {
+  .company__image {
+    margin-bottom: 5rem;
+    flex-direction: row;
+    justify-content: center;
+    gap: 6.25rem;
+    flex-wrap: wrap;
+  }
+}
+
+.footer {
+  background-color: #F5F6F8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 64em) {
+  .footer {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
+.footer__image {
+  padding: 3.0625rem 0;
+}
+.footer__image > img {
+  width: 3.5625rem;
+}
+.footer > nav {
+  color: hsl(210deg, 10%, 33%);
+  font-size: 1.1875rem;
+  line-height: 3.3125rem;
+}
+@media (min-width: 64em) {
+  .footer > nav > ul {
+    display: grid;
+    transform: translateX(1.9375rem);
+    text-align: left;
+    grid-template-columns: 11.75rem 11.75rem 11.75rem;
+    grid-template-areas: "articleone articlethree articlefive" "articletwo articlefour articlefive";
+  }
+}
+.footer__socialLogo {
+  margin-bottom: 3.25rem;
+  gap: 2.5rem;
+}
+.footer__socialLogo > i {
+  color: hsl(210deg, 10%, 33%);
+}
+.footer__socialLogo > i:not(:last-child) {
+  padding-right: 2.375rem;
 }/*# sourceMappingURL=style.css.map */

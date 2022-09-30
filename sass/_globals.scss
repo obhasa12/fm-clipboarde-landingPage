@@ -11,6 +11,11 @@ html{
 *{
     font-family: 'Bai Jamjuree', sans-serif;
 }
+*ul,ol,li{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
 html,body,h1,h2,h3,p{
     margin: 0;
     padding: 0;
@@ -20,65 +25,78 @@ body{
     background-repeat: no-repeat;
     background-size: 100%;
     text-align: center;
+    // display: flex;
+    // justify-content: center;
     @include m.breakpoints-up(large){
         background-image: url(../images/bg-header-desktop.png);
     }
 }
 
 .btn{
-    padding: 18px 76px;
+    padding: 1.125rem 4.75rem;
     color: white;
     font-size: 1rem;
     font-weight: 600;
-    letter-spacing: 1px;
+    letter-spacing: 0.0625rem;
     border: none;
-    border-radius: 30px;
+    border-radius: 1.875rem;
     cursor: pointer;
+    transition: opacity 150ms ease-in;
     @include m.breakpoints-up(large){
-        padding: 18px 37px;
+        padding: 1.125rem 2.3125rem;
+    }
+    &:hover{
+        opacity: 0.75;
     }
 }
 
 .formatTrackArticle{
     &>h3{
-        margin-bottom: 13px;
-        font-size: 25px;
+        margin-bottom: 0.8125rem;
+        font-size: 1.5rem;
         font-weight: 600;
         color: v.$cl-neutral-drk-grayishBlue;
         @include m.breakpoints-up(large){
-            font-size: 25px;
+            font-size: 1.5625rem;
         }
     }
     &>p{
-        margin-bottom: 40px;
+        margin-bottom: 2.5rem;
         font-size: 1rem;
-        line-height: 27px;
+        line-height: 1.6875rem;
         color: v.$cl-neutral-grayishBlue;
         @include m.breakpoints-up(large){
-            font-size: 19px;
+            font-size: 1.1875rem;
         }
     }
 }
 
 .formatSubHeader{
     &>h2{
-        margin-bottom: 25px;
-        font-size: 24px;
-        font-weight: 600;
-        line-height: 33px;
+        margin-bottom: 1.5625rem;
+        font-size: 1.8125rem;
+        font-weight: 700;
+        line-height: 2.625rem;
         color: v.$cl-neutral-drk-grayishBlue;
         @include m.breakpoints-up(large){
-            font-size: 35px;
+            font-size: 2.1875rem;
         }
     }
     &>p{
-        margin-bottom: 64px;
-        line-height: 30px;
+        margin-bottom: 3.125rem;
+        line-height: 1.875rem;
         color: v.$cl-neutral-grayishBlue;
         @include m.breakpoints-up(large){
-            font-size: 19px;
-            margin: 0 371px;
-            margin-bottom: 84px; 
+            font-size: 1.1875rem;
+            margin: 0 23.1875rem;
+            margin-bottom: 3.75rem; 
         }
+    }
+}
+
+.articelContainer{
+    @include m.breakpoints-up(large){
+        width: 22.1875rem;
+        height: 13.1875rem;
     }
 }
